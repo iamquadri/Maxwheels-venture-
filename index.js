@@ -149,3 +149,19 @@ var swiper = new Swiper(".vehicles-slider", {
       },
     },
   });    
+
+
+  /************** scroll reveal ********** */
+  ScrollReveal({
+    // reset: true,
+    distance: '80px',
+    duration: 2000,
+    delay: 200 
+  })
+
+
+
+  ScrollReveal().reveal('.home, .icons', { origin: 'top' });
+  ScrollReveal().reveal('.home img, .vehicles, .portfolio-box, .testimonial-wrapper, .contact form', { origin: 'bottom' });
+  ScrollReveal().reveal('.home-content h1,  .services .box-container,.services .box-container .box h3', { origin: 'left' });
+  ScrollReveal().reveal('.featured,  .newsletter, .reviews .reviews-slider .contact .row ', { origin: 'right' });  
